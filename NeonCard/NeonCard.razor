@@ -1,0 +1,44 @@
+﻿<div id="@_scope">
+    <div id="menu" class="open dark" data-scope="@_scope">
+        <style>
+            [data-scope="@_scope"] {
+                --hue1: @Hue1;
+                --hue2: @Hue2;
+                --border: 1px;
+                --border-color: hsl(var(--hue2), 12%, 20%);
+                --radius: 22px;
+                --ease: cubic-bezier(0.5, 1, 0.89, 1);
+            }
+        </style>
+        <span class="shine shine-top"></span>
+        <span class="shine shine-bottom"></span>
+        <span class="glow glow-top"></span>
+        <span class="glow glow-bottom"></span>
+        <span class="glow glow-bright glow-top"></span>
+        <span class="glow glow-bright glow-bottom"></span>
+        <div class="inner">
+            @BodyContent
+        </div>
+    </div>
+</div>
+
+@code {
+    private IJSObjectReference? _module;
+
+    private readonly string _scope = $"s{Guid.NewGuid():N}";
+    public ValueTask DisposeAsync() => ValueTask.CompletedTask;
+
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public RenderFragment? HeaderContent { get; set; }
+    [Parameter] public RenderFragment? BodyContent { get; set; }
+    [Parameter] public RenderFragment? FooterContent { get; set; }
+    [Parameter] public int Hue1 { get; set; } = 210;
+    [Parameter] public int Hue2 { get; set; } = 210;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+        }
+    }
+}
