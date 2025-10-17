@@ -5,7 +5,7 @@
 <NeonCard>
     <BodyContent>
         <h2>Title</h2>
-        <p>Description goes here.</p>
+        <p>Description</p>
     </BodyContent>
 </NeonCard>
 ```
