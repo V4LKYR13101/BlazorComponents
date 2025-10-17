@@ -8,3 +8,4 @@ Happy copy-pasting :-)
 
 ### Current Components
 * Neon Card
+* Liquid Glass Card (IOS 26 Inspired)
