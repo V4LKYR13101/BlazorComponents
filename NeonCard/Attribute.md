@@ -1,6 +1,7 @@
 #	Neon Card
 
-#### Original Author 
+#### Original Author
+
 Simey Dotme (https://codepen.io/simeydotme)
 
 #### Original Pen
