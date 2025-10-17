@@ -1,19 +1,17 @@
-#	Neon Card
+#	Liquid Glass Card (IOS 26 Inspired)
+
+This usage an SVG displacement filter to create a liquid glass effect on a card component. SImple but effective.
 
 ## Usage
 ```html
-<NeonCard>
+<LiquidGlassCard>
     <BodyContent>
         <h2>Title</h2>
-        <p>Description goes here.</p>
+        <p>Description</p>
     </BodyContent>
-</NeonCard>
+</LiquidGlassCard>
 ```
 
 #### Original Author
 
-Simey Dotme (https://codepen.io/simeydotme)
-
-#### Original Pen
-
-https://codepen.io/simeydotme/pen/PwwYZOe
+Me
